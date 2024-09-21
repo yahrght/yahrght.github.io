@@ -18,19 +18,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Stack elements vertically */
             height: 100vh;
             margin: 0;
             background-color: white;
         }
         
-        h1 {
+        a {
             font-size: 3rem;
             color: black;
-            font-weight: 200; /* Make the font thinner */
+            font-weight: 400; /* Thicker than 300 but lighter than bold */
+            text-decoration: none; /* Removes underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Adds underline on hover */
+        }
+
+        /* Styling for the "cheering" text */
+        p {
+            font-size: 1.5rem; /* Smaller font */
+            color: black;
+            font-weight: 200; /* Thinner font */
+            margin-top: 5px; /* Adds a little space between the two lines */
         }
     </style>
 </head>
 <body>
-    <h1>yahrght.net</h1>
+    <a href="https://yahrght.net" target="_blank">yahrght.net</a>
+    <p>cheering</p>
 </body>
 </html>
