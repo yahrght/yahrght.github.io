@@ -1,31 +1,31 @@
-/* Styling for the entire page */
+/* General body styling */
 body {
     font-family: 'IBM Plex Mono', monospace;
+    background-color: white;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     height: 100vh;
-    margin: 0;
-    background-color: white;
 }
 
-/* Styling for the clickable "yahrght.net" text */
-a {
+/* Styling for the "yahrght.net" heading */
+h1 {
+    color: black;
     font-size: 3rem;
-    color: black;
-    font-weight: 400; /* Thicker than 300 but lighter than bold */
-    text-decoration: none; /* Removes underline */
+    font-weight: 400; /* Make "yahrght.net" thicker */
 }
 
-a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+/* Styling for the "cheering" link */
+p a {
+    font-size: 1.5rem; /* Make "cheering" smaller */
+    font-weight: 300;  /* Make "cheering" thinner */
+    color: black;      /* Keep the text black */
+    text-decoration: none; /* Remove underline */
 }
 
-/* Styling for the "cheering" text */
-p {
-    font-size: 1.5rem; /* Smaller font */
-    color: black;
-    font-weight: 200; /* Thinner font */
-    margin-top: 5px; /* Adds a little space between the two lines */
+p a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
