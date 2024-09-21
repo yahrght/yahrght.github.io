@@ -1,0 +1,31 @@
+/* Styling for the entire page */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+/* Styling for the clickable "yahrght.net" text */
+a {
+    font-size: 3rem;
+    color: black;
+    font-weight: 400; /* Thicker than 300 but lighter than bold */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Styling for the "cheering" text */
+p {
+    font-size: 1.5rem; /* Smaller font */
+    color: black;
+    font-weight: 200; /* Thinner font */
+    margin-top: 5px; /* Adds a little space between the two lines */
+}
