@@ -1,0 +1,27 @@
+/* General body styling */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Heading style */
+h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 400; /* Matches the slightly thicker font weight of yahrght.net */
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+p {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300; /* Slightly lighter font for supporting text */
+}
