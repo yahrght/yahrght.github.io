@@ -25,3 +25,14 @@ p {
     font-size: 1.2rem;
     font-weight: 300; /* Slightly lighter font for supporting text */
 }
+
+p a {
+    font-size: 1.5rem; /* Make "cheering" smaller */
+    font-weight: 300;  /* Make "cheering" thinner */
+    color: black;      /* Keep the text black */
+    text-decoration: none; /* Remove underline */
+}
+
+p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
