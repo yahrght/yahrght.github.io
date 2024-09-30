@@ -35,17 +35,18 @@ h1 {
 .text-wall-container {
     width: 100%;
     max-width: 1200px;
-    max-height: 600px; /* Limit height of text wall */
-    overflow-y: auto;
+    margin: 0 auto; /* Center the text wall on the page */
     padding: 20px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Text wall styling */
 .text-wall {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    grid-gap: 20px; /* Increase the gap for spacing */
+    grid-gap: 20px; /* Increased gap for spacing */
     text-align: center;
     max-width: 100%;
 }
@@ -54,11 +55,11 @@ h1 {
 .text-wall a {
     text-decoration: none;
     font-size: 1.5em; /* Increased font size */
-    color: inherit;  /* Let the alternating colors apply */
     padding: 10px 0;
     display: flex;
     justify-content: center; /* Center the text horizontally */
     align-items: center; /* Center the text vertically */
+    color: inherit; /* Color will be defined by the alternating classes */
 }
 
 /* Alternating text colors */
