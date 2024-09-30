@@ -5,70 +5,61 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the top of the page */
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Heading style */
 h1 {
     color: black;
     font-size: 3rem;
-    font-weight: 400; /* Matches the slightly thicker font weight of yahrght.net */
-    margin-bottom: 20px;
+    font-weight: 400;
+    margin: 20px 0;
 }
 
-/* Paragraph style */
-p {
-    color: black;
-    font-size: 1.2rem;
-    font-weight: 300; /* Slightly lighter font for supporting text */
-}
-
-p a {
-    font-size: 1.5rem; /* Make "cheering" smaller */
-    font-weight: 300;  /* Make "cheering" thinner */
-    color: black;      /* Keep the text black */
-    text-decoration: none; /* Remove underline */
-}
-
-p a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-/* New styles for the video placeholder */
+/* Video Placeholder */
 .video-placeholder {
     width: 100%;
+    max-width: 800px;
     height: 300px;
     background-color: #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Text wall container */
+.text-wall-container {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 600px; /* Limit height of text wall */
+    overflow-y: auto;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
-/* New text wall styling */
+/* Text wall styling */
 .text-wall {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
     grid-gap: 10px;
     text-align: center;
-    width: 100%;
-    padding: 20px;
+    max-width: 100%;
 }
 
-/* Styling for the individual links */
+/* Styling for the individual links as plain text */
 .text-wall a {
     text-decoration: none;
     font-size: 1.2em;
-    padding: 20px;
-    display: block;
-    color: white;
-    border-radius: 5px;
+    padding: 10px;
+    color: inherit; /* Default color, will change via class */
+    cursor: pointer;
 }
 
-/* Alternating colors for the reasons */
-.color1 { background-color: #b30000; } /* Darker red */
-.color2 { background-color: #003399; } /* Darker blue */
-.color3 { background-color: #e6b800; } /* Darker yellow */
+/* Alternating text colors */
+.color1 { color: #b30000; } /* Darker red */
+.color2 { color: #003399; } /* Darker blue */
+.color3 { color: #e6b800; } /* Darker yellow */
