@@ -44,8 +44,8 @@ h1 {
 /* Text wall styling */
 .text-wall {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    grid-gap: 40px; /* Larger gap for better spacing */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns dynamically */
+    grid-gap: 20px; /* Gap between items */
     text-align: center;
     max-width: 100%;
 }
@@ -58,6 +58,7 @@ h1 {
     color: initial; /* Ensure alternating colors apply */
     display: inline-block;
     padding: 10px 20px; /* Add padding for button-like spacing */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* Alternating text colors */
