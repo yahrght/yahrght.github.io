@@ -45,7 +45,7 @@ h1 {
 .text-wall {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    grid-gap: 10px;
+    grid-gap: 20px; /* Increase the gap for spacing */
     text-align: center;
     max-width: 100%;
 }
@@ -53,9 +53,12 @@ h1 {
 /* Styling for the individual links as plain text */
 .text-wall a {
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px;
-    cursor: pointer;
+    font-size: 1.5em; /* Increased font size */
+    color: inherit;  /* Let the alternating colors apply */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
 }
 
 /* Alternating text colors */
