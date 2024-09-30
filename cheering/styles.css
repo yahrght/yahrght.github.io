@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start; /* Align to the top of the page */
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
@@ -35,7 +35,6 @@ h1 {
 .text-wall-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the text wall on the page */
     padding: 20px;
     margin-bottom: 40px;
     display: flex;
@@ -46,7 +45,7 @@ h1 {
 .text-wall {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    grid-gap: 20px; /* Increased gap for spacing */
+    grid-gap: 20px; /* Gap between items */
     text-align: center;
     max-width: 100%;
 }
@@ -54,12 +53,10 @@ h1 {
 /* Styling for the individual links as plain text */
 .text-wall a {
     text-decoration: none;
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.5em;
     padding: 10px 0;
-    display: flex;
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-    color: inherit; /* Color will be defined by the alternating classes */
+    color: initial; /* Ensure alternating colors apply */
+    display: inline-block;
 }
 
 /* Alternating text colors */
