@@ -20,6 +20,15 @@ h1 {
     text-align: center; /* Centers the title */
 }
 
+/* Subheading style */
+.subheading {
+    color: black; /* Lighter grey for the subheading */
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px; /* Space below the subheading */
+    text-align: center;
+}
+
 /* Paragraph style */
 p {
     color: black;
