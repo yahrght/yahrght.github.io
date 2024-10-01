@@ -1,1 +1,14 @@
-/* Basic CSS for combo */   echo body {   echo    font-family: 'IBM Plex Mono', monospace;   echo    background-color: #f0ead6;   echo    color: #333;   echo    margin: 0;   echo    padding: 0;   echo }   echo h1 {   echo    text-align: center;   echo    font-size: 2.5rem;   echo    color: #b30000;   echo } 
+/* Basic CSS for combo */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #f0ead6; /* Light eggshell color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black; /* Set text color to black */
+}
