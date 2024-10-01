@@ -27,17 +27,23 @@ p {
 }
 
 p a {
-    font-size: 1.5rem; /* Make "cheering" smaller */
-    font-weight: 300;  /* Make "cheering" thinner */
-    color: black;      /* Keep the text black */
+    font-size: 1.2rem; /* Adjust size to match paragraph */
+    font-weight: 300;  /* Keep text thinner */
     text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
 }
 
+/* Hyperlink colors based on primary colors, darker versions */
+p a.color1 { color: #b30000; } /* Darker red */
+p a.color2 { color: #003366; } /* Darker blue */
+p a.color3 { color: #b38f00; } /* Darker yellow */
+
+/* Hover effect to change color */
 p a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
 
-/* New styles for the video placeholder */
+/* Video placeholder styling */
 .video-placeholder {
     width: 100%;
     height: 300px;
@@ -47,28 +53,3 @@ p a:hover {
     align-items: center;
     margin-bottom: 40px;
 }
-
-/* New text wall styling */
-.text-wall {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-}
-
-/* Styling for the individual links */
-.text-wall a {
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 20px;
-    display: block;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Alternating colors for the reasons */
-.color1 { background-color: #b30000; } /* Darker red */
-.color2 { background-color: #003399; } /* Darker blue */
-.color3 { background-color: #e6b800; } /* Darker yellow */
