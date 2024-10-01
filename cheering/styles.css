@@ -24,9 +24,12 @@ p {
     color: black;
     font-size: 1.2rem;
     font-weight: 300; /* Slightly lighter font for supporting text */
-    text-align: center; /* Center text within the paragraph */
-    max-width: 80%; /* Limit the paragraph width */
+    text-align: center; /* Center the text content */
+    max-width: 80%; /* Limit paragraph width */
     margin: 0 auto; /* Center the paragraph horizontally */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap; /* Wrap content to prevent overflow */
 }
 
 /* Hyperlink styling */
@@ -35,6 +38,7 @@ p a {
     font-weight: 300;  /* Keep text thinner */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s;
+    margin: 5px; /* Add some space between links */
 }
 
 /* Hyperlink colors based on primary colors, darker versions */
