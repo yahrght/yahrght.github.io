@@ -15,9 +15,18 @@ body {
 h1 {
     color: black;
     font-size: 3rem;
-    font-weight: 400; /* Matches the slightly thicker font weight of yahrght.net */
+    font-weight: 300; /* Matches the slightly thicker font weight of yahrght.net */
     margin-bottom: 20px;
     text-align: center; /* Centers the title */
+}
+
+/* Subheading style */
+.subheading {
+    color: black; /* Lighter grey for the subheading */
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px; /* Space below the subheading */
+    text-align: center;
 }
 
 /* Paragraph style */
@@ -61,4 +70,15 @@ p a:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        justify-content: flex-start; /* Align content to the top on mobile */
+    }
+
+    .video-placeholder {
+        height: auto; /* Adjust video height for mobile */
+        margin-bottom: 20px; /* Space between video and text */
+    }
 }
