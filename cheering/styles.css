@@ -17,6 +17,7 @@ h1 {
     font-size: 3rem;
     font-weight: 400; /* Matches the slightly thicker font weight of yahrght.net */
     margin-bottom: 20px;
+    text-align: center; /* Centers the title */
 }
 
 /* Paragraph style */
