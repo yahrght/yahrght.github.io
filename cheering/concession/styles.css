@@ -10,5 +10,24 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: black; /* Set text color to black */
+    color: black; /* Black color for the heading */
+}
+
+/* Video styling */
+.video-placeholder {
+    width: 100%;
+    max-width: 800px; /* Constrain video width */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Placeholder description text */
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #333; /* Dark text for placeholder */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
