@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #f0ead6; /* Eggshell white */
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -24,8 +24,12 @@ p {
     color: black;
     font-size: 1.2rem;
     font-weight: 300; /* Slightly lighter font for supporting text */
+    text-align: center; /* Center text within the paragraph */
+    max-width: 80%; /* Limit the paragraph width */
+    margin: 0 auto; /* Center the paragraph horizontally */
 }
 
+/* Hyperlink styling */
 p a {
     font-size: 1.2rem; /* Adjust size to match paragraph */
     font-weight: 300;  /* Keep text thinner */
