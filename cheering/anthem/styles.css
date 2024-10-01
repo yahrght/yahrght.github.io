@@ -1,0 +1,49 @@
+/* Basic CSS for army */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #f0ead6; /* Light eggshell color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black; /* Black color for the heading */
+}
+
+/* Video styling */
+.video-placeholder {
+    width: 100%;
+    max-width: 800px; /* Constrain video width */
+    height: auto;
+    margin: 0 auto; /* Center the video horizontally */
+    display: block;
+}
+
+/* Placeholder description text */
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #333; /* Dark text for placeholder */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .video-placeholder {
+        max-width: 100%; /* Make video fill screen width on smaller devices */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}
