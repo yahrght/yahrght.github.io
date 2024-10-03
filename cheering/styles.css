@@ -15,17 +15,17 @@ body {
 h1 {
     color: black;
     font-size: 3rem;
-    font-weight: 300; /* Matches the slightly thicker font weight of yahrght.net */
+    font-weight: 300;
     margin-bottom: 20px;
-    text-align: center; /* Centers the title */
+    text-align: center;
 }
 
 /* Subheading style */
 .subheading {
-    color: black; /* Lighter grey for the subheading */
+    color: black;
     font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 30px; /* Space below the subheading */
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -33,32 +33,32 @@ h1 {
 p {
     color: black;
     font-size: 1.2rem;
-    font-weight: 300; /* Slightly lighter font for supporting text */
-    text-align: center; /* Center the text content */
-    max-width: 80%; /* Limit paragraph width */
-    margin: 0 auto; /* Center the paragraph horizontally */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center the content horizontally */
-    flex-wrap: wrap; /* Wrap content to prevent overflow */
+    font-weight: 300;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Hyperlink styling */
 p a {
-    font-size: 1.2rem; /* Adjust size to match paragraph */
-    font-weight: 300;  /* Keep text thinner */
-    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
     transition: color 0.3s;
-    margin: 5px; /* Add some space between links */
+    margin: 5px;
 }
 
-/* Hyperlink colors based on primary colors, darker versions */
-p a.color1 { color: #b30000; } /* Darker red */
-p a.color2 { color: #003366; } /* Darker blue */
-p a.color3 { color: #b38f00; } /* Darker yellow */
+/* Hyperlink colors */
+p a.color1 { color: #b30000; }
+p a.color2 { color: #003366; }
+p a.color3 { color: #b38f00; }
 
-/* Hover effect to change color */
+/* Hover effect */
 p a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 /* Updated Video placeholder styling for iframe */
