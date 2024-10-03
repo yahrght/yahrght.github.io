@@ -86,7 +86,10 @@ p a:hover {
     }
 
     .video-placeholder {
-        padding-bottom: 75%; /* Adjust aspect ratio for mobile */
+        width: 80%; /* Adjust width to your desired percentage */
+        padding-bottom: 75%; /* Keep aspect ratio */
         margin-bottom: 20px;
+        margin-left: auto; /* Center the video */
+        margin-right: auto; /* Center the video */
     }
 }
