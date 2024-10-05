@@ -66,8 +66,8 @@ iframe {
     aspect-ratio: 16 / 9;    /* Maintains a 16:9 ratio */
     width: 100%;             /* Ensures the iframe takes up the full width of its container */
     height: auto;            /* Adjusts the height based on the aspect ratio */
-    max-width: 560px;        /* Sets a maximum width for larger screens */
-    max-height: 315px;       /* Sets a maximum height for larger screens */
+    max-width: 640px;        /* Sets a maximum width for larger screens */
+    max-height: 360px;       /* Sets a maximum height for larger screens */
     margin-bottom: 40px;
 }
 
