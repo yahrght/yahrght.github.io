@@ -100,11 +100,8 @@ p a:hover {
         max-width: 90%; /* Increase paragraph width */
     }
 
-    .video-placeholder {
-        width: 80%; /* Video still centers and fits well */
-        padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
-        margin-bottom: 20px;
-        margin-left: auto; /* Center the video */
-        margin-right: auto; /* Center the video */
-    }
+.video-container iframe {
+    width: 100%;
+    height: auto;
+  }
 }
