@@ -80,35 +80,31 @@ p a:hover {
     height: 100%;
 }
 
+/* For screens smaller than 600px */
 @media only screen and (max-width: 600px) {
     body {
         justify-content: flex-start;
-        padding: 10px;
+        padding: 10px; /* Add some padding for smaller screens */
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Reduce the size of the heading for smaller screens */
     }
 
     .subheading {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjust the subheading size */
     }
 
     p {
-        font-size: 1rem;
-        max-width: 100%;
-        margin: 0 10px;
+        font-size: 1rem; /* Adjust paragraph font size */
+        max-width: 90%; /* Increase paragraph width */
     }
 
     .video-placeholder {
-        width: 60%; /* Adjust this to your preferred width (e.g., 70%, 80%, etc.) */
-        padding-bottom: 45%; /* 16:9 Aspect Ratio (56.25%) adjusted to fit the 80% width */
+        width: 80%; /* Video still centers and fits well */
+        padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
         margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    p a {
-        font-size: 1rem;
+        margin-left: auto; /* Center the video */
+        margin-right: auto; /* Center the video */
     }
 }
