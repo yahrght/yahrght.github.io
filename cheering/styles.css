@@ -61,8 +61,8 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* Updated Video placeholder styling for iframe */
-.video-placeholder {
+/* Video container for responsiveness */
+.video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
@@ -72,7 +72,7 @@ p a:hover {
     margin-bottom: 40px;
 }
 
-.video-placeholder iframe {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -100,8 +100,8 @@ p a:hover {
         max-width: 90%; /* Increase paragraph width */
     }
 
-.video-container iframe {
-    width: 100%;
-    height: auto;
-  }
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
 }
