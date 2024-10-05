@@ -83,13 +83,32 @@ p a:hover {
 @media only screen and (max-width: 600px) {
     body {
         justify-content: flex-start;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        max-width: 100%;
+        margin: 0 10px;
     }
 
     .video-placeholder {
-        width: 80%; /* Adjust width to your desired percentage */
-        padding-bottom: 75%; /* Keep aspect ratio */
+        width: 80%; /* Adjust this to your preferred width (e.g., 70%, 80%, etc.) */
+        padding-bottom: 45%; /* 16:9 Aspect Ratio (56.25%) adjusted to fit the 80% width */
         margin-bottom: 20px;
-        margin-left: auto; /* Center the video */
-        margin-right: auto; /* Center the video */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p a {
+        font-size: 1rem;
     }
 }
