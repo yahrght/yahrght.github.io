@@ -101,7 +101,7 @@ p a:hover {
     }
 
     .video-placeholder {
-        width: 80%; /* Adjust this to your preferred width (e.g., 70%, 80%, etc.) */
+        width: 60%; /* Adjust this to your preferred width (e.g., 70%, 80%, etc.) */
         padding-bottom: 45%; /* 16:9 Aspect Ratio (56.25%) adjusted to fit the 80% width */
         margin-bottom: 20px;
         margin-left: auto;
