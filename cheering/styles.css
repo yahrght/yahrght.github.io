@@ -1,4 +1,4 @@
-/* General body styling */
+
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: #f0ead6;
@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-/* Heading style */
+
 h1 {
     color: black;
     font-size: 3rem;
@@ -20,7 +20,7 @@ h1 {
     text-align: center;
 }
 
-/* Subheading style */
+
 .subheading {
     color: black;
     font-size: 1.5rem;
@@ -29,7 +29,7 @@ h1 {
     text-align: center;
 }
 
-/* Paragraph style */
+
 p {
     color: black;
     font-size: 1.2rem;
@@ -42,7 +42,7 @@ p {
     flex-wrap: wrap;
 }
 
-/* Hyperlink styling */
+
 p a {
     font-size: 1.2rem;
     font-weight: 300;
@@ -51,47 +51,47 @@ p a {
     margin: 5px;
 }
 
-/* Hyperlink colors */
+
 p a.color1 { color: #b30000; }
 p a.color2 { color: #003366; }
 p a.color3 { color: #b38f00; }
 
-/* Hover effect for links */
+
 p a:hover {
     text-decoration: underline;
 }
 
-/* Iframe styling with aspect-ratio */
+
 iframe {
-    aspect-ratio: 16 / 9;    /* Maintains a 16:9 ratio */
-    width: 100%;             /* Ensures the iframe takes up the full width of its container */
-    height: auto;            /* Adjusts the height based on the aspect ratio */
-    max-width: 640px;        /* Sets a maximum width for larger screens */
-    max-height: 360px;       /* Sets a maximum height for larger screens */
+    aspect-ratio: 16 / 9;    
+    width: 100%;             
+    height: auto;          
+    max-width: 640px;       
+    max-height: 360px;     
     margin-bottom: 40px;
 }
 
-/* Responsive adjustments for smaller screens */
+
 @media only screen and (max-width: 600px) {
     body {
         justify-content: flex-start;
-        padding: 10px; /* Add padding for smaller screens */
+        padding: 10px; 
     }
 
     h1 {
-        font-size: 2.5rem; /* Reduce heading size */
+        font-size: 2.5rem; 
     }
 
     .subheading {
-        font-size: 1.2rem; /* Adjust subheading size */
+        font-size: 1.2rem; 
     }
 
     p {
-        font-size: 1rem; /* Adjust paragraph font size */
-        max-width: 90%; /* Increase paragraph width */
+        font-size: 1rem; 
+        max-width: 90%; 
     }
 
     iframe {
-        width: 100%; /* Keep iframe full width on smaller screens */
+        width: 100%; 
     }
 }
