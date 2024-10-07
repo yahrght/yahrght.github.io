@@ -31,7 +31,7 @@ body {
 h1 {
     font-family: 'BerlinType', sans-serif; /* Use Berlin Type font */
     color: black;
-    font-size: 3rem;
+    font-size: clamp(3rem, 10vw, 6rem);
     font-weight: bold; /* Use 'normal' to match the Regular font version */
 }
 
