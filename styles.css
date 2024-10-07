@@ -106,3 +106,10 @@ p a:hover {
         transform: translateX(-100%);
     }
 }
+
+@media (max-width: 768px) {
+    #banner-container .item {
+        padding: 0 10px;  /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Slightly smaller text */
+    }
+}
