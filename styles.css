@@ -1,4 +1,21 @@
 /* General body styling */
+@font-face {
+    font-family: 'BerlinType';
+    src: url('fonts/BerlinTypeWeb-Regular.woff2') format('woff2'),
+         url('fonts/BerlinTypeWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BerlinType';
+    src: url('fonts/BerlinTypeWeb-Bold.woff2') format('woff2'),
+         url('fonts/BerlinTypeWeb-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: white;
@@ -11,12 +28,13 @@ body {
     height: 100vh;
 }
 
-/* Styling for the "yahrght.net" heading */
 h1 {
+    font-family: 'BerlinType', sans-serif; /* Use Berlin Type font */
     color: black;
     font-size: 3rem;
-    font-weight: 400; /* Make "yahrght.net" thicker */
+    font-weight: bold; /* Use 'normal' to match the Regular font version */
 }
+
 
 /* Styling for the "cheering" link */
 p a {
