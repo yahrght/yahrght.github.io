@@ -29,3 +29,33 @@ p a {
 p a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
+
+/* General banner styling */
+.scrolling-banner {
+    width: 100%; /* Full width */
+    background-color: #ffcc00; /* Ticket-like yellow background */
+    color: #333; /* Dark text color for contrast */
+    padding: 10px 0; /* Padding around the text */
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    overflow: hidden; /* Hide the overflow of the moving text */
+    box-shadow: 0 4px 2px -2px gray; /* Shadow for a raised effect */
+    position: fixed;
+    z-index: 1000;
+}
+
+/* Top banner */
+.scrolling-banner {
+    top: 0;
+}
+
+/* Bottom banner */
+.bottom-banner {
+    bottom: 0;
+}
+
+/* Inner text that scrolls */
+.scrolling-banner p {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: scroll-text 15s linear infinite; /* Infinite scrolling animation
