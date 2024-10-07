@@ -3,8 +3,12 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: white;
     margin: 0;
-    padding: 50px 0; /* Add space for top and bottom banners */
-    min-height: 100vh; /* Ensure content fills at least the viewport height */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* Styling for the "yahrght.net" heading */
@@ -24,61 +28,4 @@ p a {
 
 p a:hover {
     text-decoration: underline; /* Add underline on hover */
-}
-
-/* General banner styling */
-.scrolling-banner {
-    width: 100%; /* Full width */
-    background-color: #ffcc00; /* Ticket-like yellow background */
-    color: #333; /* Dark text color for contrast */
-    height: 40px; /* Set a fixed height for the banner */
-    line-height: 40px; /* Vertically center the text */
-    font-size: 16px; /* Adjust the font size */
-    font-weight: bold; /* Bold text */
-    overflow: hidden; /* Hide the overflow of the moving text */
-    box-shadow: 0 4px 2px -2px gray; /* Shadow for a raised effect */
-    position: fixed; /* Fix the banners in place */
-    z-index: 1000; /* Ensure banners are above the content */
-    padding: 0; /* Remove extra padding */
-}
-
-/* Top banner */
-.scrolling-banner.top-banner {
-    top: 0;
-}
-
-/* Bottom banner */
-.scrolling-banner.bottom-banner {
-    bottom: 0;
-}
-
-/* Inner text that scrolls */
-.scrolling-banner p {
-    display: inline-block;
-    white-space: nowrap; /* Prevents text from wrapping */
-    animation: scroll-text 15s linear infinite; /* Infinite scrolling animation */
-    margin: 0; /* Remove any extra margin */
-    padding-left: 100%; /* Start scrolling from outside the screen */
-}
-
-/* Links inside the banner */
-.scrolling-banner a {
-    color: #333; /* Same as the text color */
-    text-decoration: none; /* No underline */
-    font-weight: normal;
-    margin: 0 10px; /* Add space between links */
-}
-
-.scrolling-banner a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Keyframes for the scrolling effect */
-@keyframes scroll-text {
-    0% {
-        transform: translateX(100%); /* Start outside from the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to the left */
-    }
 }
