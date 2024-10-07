@@ -58,4 +58,4 @@ p a:hover {
 .scrolling-banner p {
     display: inline-block;
     white-space: nowrap; /* Prevents text from wrapping */
-    animation: scroll-text 15s linear infinite; /* Infinite scrolling animation
+    animation: scroll-text 15s linear infinite; /* Infinite scrolling animation */
