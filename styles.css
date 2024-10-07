@@ -53,6 +53,35 @@ p a:hover {
     white-space: nowrap;
 }
 
+/* Styling links in the banner */
+#banner-container a {
+    color: #fff; /* White text for the links */
+    text-decoration: none; /* No underline */
+}
+
+#banner-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Ensure visited links stay white */
+#banner-container a:visited {
+    color: #fff;
+}
+
+/* Adjust the scroll and item for vertical centering */
+#banner-container .scroll {
+    display: flex;
+    align-items: center;  /* Center items vertically */
+    height: 100%; /* Ensure the scroll area takes full height of the banner */
+}
+
+#banner-container .item {
+    padding: 0 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;  /* Vertically center the text inside each item */
+}
+
 /* Fade effect for a smooth edge */
 .fade {
     width: 100%;
@@ -75,5 +104,12 @@ p a:hover {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    #banner-container .item {
+        padding: 0 10px;  /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Slightly smaller text */
     }
 }
