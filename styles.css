@@ -59,3 +59,26 @@ p a:hover {
     display: inline-block;
     white-space: nowrap; /* Prevents text from wrapping */
     animation: scroll-text 15s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Links inside the banner */
+.scrolling-banner a {
+    color: #333; /* Same as the text color */
+    text-decoration: none; /* No underline */
+    font-weight: normal;
+    margin: 0 10px; /* Add space between links */
+}
+
+.scrolling-banner a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Keyframes for the scrolling effect */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%); /* Start outside from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
