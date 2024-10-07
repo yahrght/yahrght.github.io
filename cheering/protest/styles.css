@@ -1,8 +1,8 @@
-/* Basic CSS for protest */
+
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #f0ead6; /* Light eggshell color */
-    color: #333; /* Dark text color */
+    background-color: #f0ead6; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
@@ -10,40 +10,40 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: black; /* Black color for the heading */
+    color: black; 
 }
 
-/* Video styling */
+
 .video-placeholder {
     width: 100%;
-    max-width: 800px; /* Constrain video width */
+    max-width: 800px; 
     height: auto;
-    margin: 0 auto; /* Center the video horizontally */
+    margin: 0 auto; 
     display: block;
 }
 
-/* Placeholder description text */
+
 .description {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 20px;
-    color: #333; /* Dark text for placeholder */
+    color: #333; 
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Media query for mobile devices */
+
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
+        font-size: 2rem; 
     }
 
     .video-placeholder {
-        max-width: 100%; /* Make video fill screen width on smaller devices */
+        max-width: 100%; 
     }
 
     .description {
-        font-size: 1rem; /* Adjust font size for mobile */
+        font-size: 1rem; 
     }
 }
