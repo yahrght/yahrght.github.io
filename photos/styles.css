@@ -17,13 +17,13 @@ body {
 
 .slider {
     position: relative;
-    width: 80vw; /* Using vw to be responsive based on the screen size */
-    height: 80vh; /* Set a consistent height */
+    width: 80vw; /* Responsive width */
+    height: 80vh; /* Responsive height */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* Black background to provide contrast */
+    background-color: #000; /* Background to contrast photos */
 }
 
 .slides {
@@ -32,10 +32,18 @@ body {
 }
 
 .slide {
-    min-width: 100%;
-    height: auto;
-    object-fit: contain; /* This maintains aspect ratio and fits the image within the container */
     display: none; /* Hide all slides initially */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%; /* Ensure image width doesn't exceed container */
+    max-height: 100%; /* Ensure image height doesn't exceed container */
+    object-fit: contain; /* Prevent cropping, fit image inside container */
 }
 
 /* Buttons for navigation */
@@ -64,81 +72,14 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Ensure the displayed slide is centered */
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures each image is scaled down or up to fit without distorting */
-}
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+@media (max-width: 768px) {
+    .slider {
+        width: 90vw; /* Slightly larger width on smaller screens */
+        height: 70vh; /* Adjust height */
+    }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'IBM Plex Mono', monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f3f3;
-}
-
-.slider {
-    position: relative;
-    width: 80vw; /* Using vw to be responsive based on the screen size */
-    height: 80vh; /* Set a consistent height */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Black background to provide contrast */
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    height: auto;
-    object-fit: contain; /* This maintains aspect ratio and fits the image within the container */
-    display: none; /* Hide all slides initially */
-}
-
-/* Buttons for navigation */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 20px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Ensure the displayed slide is centered */
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures each image is scaled down or up to fit without distorting */
+    .prev, .next {
+        font-size: 18px; /* Slightly smaller buttons */
+        padding: 8px; /* Adjust button padding */
+    }
 }
