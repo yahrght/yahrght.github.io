@@ -25,12 +25,12 @@
   
   /* Slideshow container */
   
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  
+.slideshow-container {
+  max-width: 80%;  /* Reduce the max width to 80% of the viewport width */
+  position: relative;
+  margin: auto;
+}
+
   
   /* Next & previous buttons */
   
